@@ -44,7 +44,7 @@
 
 ### 部署在 Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/wxs7655/BingAI-GPT)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/WZH-Team/BingAI-GPT)
 
 
 
