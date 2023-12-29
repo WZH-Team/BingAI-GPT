@@ -31,7 +31,7 @@
     pnpm install
    ```
 2. **此项我们已经帮你修改好了，如二次开发则请重新检测此项的设置**
-   复制 `.env.example` 文件，重命名为 `.env`，并随便填写一个 [OpenAI API key](https://platform.openai.com/account/api-keys) 到 `.env` 文件中
+   修改 `.env`，随便填写一个 [OpenAI API key](https://platform.openai.com/account/api-keys) 到 `.env` 文件中
    ```bash
     OPENAI_API_KEY=114514
    ```
