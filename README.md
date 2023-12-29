@@ -1,102 +1,88 @@
 # ChatGPT-API Demo
 
-English | [简体中文](./README.zh-CN.md)
 
-A demo repo based on [OpenAI GPT-3.5 Turbo API.](https://platform.openai.com/docs/guides/chat)
+一个基于 [ChatGPT-API Demo](https://github.com/anse-app/chatgpt-demo) 二改的程序。
 
-**🍿 Live preview**: https://chatgpt.ddiu.me
+**🍿 在线预览**: https://chat.bing.ecylt.top
 
-> ⚠️ Notice: Our API Key limit has been exhausted. So the demo site is not available now.
+本版本无需
 
-![chat-logo](https://cdn.jsdelivr.net/gh/yzh990918/static@master/chat-logo.webp)
+## 本地运行
 
-## Introducing `Anse`
+### 前置环境
 
-Looking for multi-chat, image-generation, and more powerful features? Take a look at our newly launched [Anse](https://github.com/anse-app/anse).
-
-More info on https://github.com/ddiu8081/chatgpt-demo/discussions/247.
-
-[![image](https://user-images.githubusercontent.com/1998168/235048408-ca4015f5-4d3c-4c64-9a6c-9069a89cd23a.png)](https://github.com/anse-app/anse)
-
-## Running Locally
-
-### Pre environment
-1. **Node**: Check that both your development environment and deployment environment are using `Node v18` or later. You can use [nvm](https://github.com/nvm-sh/nvm) to manage multiple `node` versions locally.
+1. **Node**: 检查您的开发环境和部署环境是否都使用 `Node v18` 或更高版本。你可以使用 [nvm](https://github.com/nvm-sh/nvm) 管理本地多个 `node` 版本。
    ```bash
     node -v
    ```
-2. **PNPM**: We recommend using [pnpm](https://pnpm.io/) to manage dependencies. If you have never installed pnpm, you can install it with the following command:
+2. **PNPM**: 我们推荐使用 [pnpm](https://pnpm.io/) 来管理依赖，如果你从来没有安装过 pnpm，可以使用下面的命令安装：
    ```bash
     npm i -g pnpm
    ```
-3. **OPENAI_API_KEY**: Before running this application, you need to obtain the API key from OpenAI. You can register the API key at [https://beta.openai.com/signup](https://beta.openai.com/signup).
+3. **OPENAI_API_KEY**: 在运行此应用程序之前，您需要从 OpenAI 获取 API 密钥。您可以在 [https://beta.openai.com/signup](https://beta.openai.com/signup) 注册 API 密钥。
 
-### Getting Started
+### 起步运行
 
-1. Install dependencies
+1. 安装依赖
    ```bash
     pnpm install
    ```
-2. Copy the `.env.example` file, then rename it to `.env`, and add your [OpenAI API key](https://platform.openai.com/account/api-keys) to the `.env` file.
+2. 复制 `.env.example` 文件，重命名为 `.env`，并添加你的 [OpenAI API key](https://platform.openai.com/account/api-keys) 到 `.env` 文件中
    ```bash
     OPENAI_API_KEY=sk-xxx...
    ```
-3. Run the application, the local project runs on `http://localhost:3000/`
+3. 运行应用，本地项目运行在 `http://localhost:3000/`
    ```bash
     pnpm run dev
    ```
 
-## Deploy
+## 部署
 
-### Deploy With Vercel
+### 部署在 Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fddiu8081%2Fchatgpt-demo&env=OPENAI_API_KEY&envDescription=OpenAI%20API%20Key&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys)
 
 
 
-> #### 🔒 Need website password?
+> ###### 🔒 需要站点密码？
 >
-> Deploy with the [`SITE_PASSWORD`](#environment-variables)
+> 携带[`SITE_PASSWORD`](#environment-variables)进行部署
 >
 > <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fddiu8081%2Fchatgpt-demo&env=OPENAI_API_KEY&env=SITE_PASSWORD&envDescription=OpenAI%20API%20Key&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys" alt="Deploy with Vercel" target="_blank"><img src="https://vercel.com/button" alt="Deploy with Vercel" height=24 style="vertical-align: middle; margin-right: 4px;"></a>
 
 ![image](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230310/image.4wzfb79qt7k0.webp)
 
-
-### Deploy With Netlify
+### 部署在 Netlify
 
 [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ddiu8081/chatgpt-demo#OPENAI_API_KEY=&HTTPS_PROXY=&OPENAI_API_BASE_URL=&HEAD_SCRIPTS=&PUBLIC_SECRET_KEY=&OPENAI_API_MODEL=&SITE_PASSWORD=)
 
-**Step-by-step deployment tutorial:**
+**分步部署教程：**
 
-1. [Fork](https://github.com/ddiu8081/chatgpt-demo/fork) this project, Go to [https://app.netlify.com/start](https://app.netlify.com/start) new Site, select the project you `forked` done, and connect it with your `GitHub` account.
+1. [Fork](https://github.com/ddiu8081/chatgpt-demo/fork) 此项目，前往 [https://app.netlify.com/start](https://app.netlify.com/start) 新建站点，选择你 `fork` 完成的项目，将其与 `GitHub` 帐户连接。
 
 ![image](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230310/image.3nlt4hgzb16o.webp)
 
 ![image](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230310/image.5fhfouap270g.webp)
 
 
-2. Select the branch you want to deploy, then configure environment variables in the project settings.
+2. 选择要部署的分支，选择 `main` 分支，在项目设置中配置环境变量，环境变量配置参考下文。
 
-![image](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230311/image.gfs9lx8c854.webp)
+![image](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230310/image.6dvtfmoijb7k.webp)
 
-3. Select the default build command and output directory, Click the `Deploy Site` button to start deploying the site.
+3. 选择默认的构建命令和输出目录，单击 `Deploy Site` 按钮开始部署站点。
 
-![image](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230311/image.4jky9e1wbojk.webp)
+![image](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230310/image.e0n7c0zaen4.webp)
 
+### 部署在 Docker
+部署之前请确认 `.env` 文件正常配置，环境变量参考下方文档，[Docker Hub address](https://hub.docker.com/r/ddiu8081/chatgpt-demo).
 
-### Deploy with Docker
-
-Environment variables refer to the documentation below. [Docker Hub address](https://hub.docker.com/r/ddiu8081/chatgpt-demo).
-
-**Direct run**
+**一键运行**
 ```bash
 docker run --name=chatgpt-demo -e OPENAI_API_KEY=YOUR_OPEN_API_KEY -p 3000:3000 -d ddiu8081/chatgpt-demo:latest
 ```
-`-e` define environment variables in the container.
+`-e` 在容器中定义环境变量。
 
-
-**Docker compose**
+**使用 Docker compose**
 ```yml
 version: '3'
 
@@ -124,19 +110,19 @@ docker compose up -d
 docker-compose down
 ```
 
-### Deploy with Sealos
+### Sealos 部署
 
- 1.Register a Sealos account for free [sealos cloud](https://cloud.sealos.io)
+ 1.注册 Sealos 免费账号 [sealos cloud](https://cloud.sealos.io)
 
-2.Click  `App Launchpad` button
+2.点击  `App Launchpad` 按钮
 
 ![App Launchpad](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230609/install-on-sealos-1.34i8gi80j268.webp)
 
-3.Click `Create Application` button
+3.点击 `Create Application` 按钮
 
 ![Create Application](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230609/install-on-sealos-2.4t8q5px18eps.webp)
 
-4.Just fill in according to the following figure, and click on it after filling out `Deploy Application` button
+4.按照下图填写后，点击 `Deploy Application` 按钮
 
 ![Create Application](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230609/install-on-sealos-3.5x5exqk0o8lc.webp)
 
@@ -150,58 +136,57 @@ Accessible to the Public: On
 Environment: OPENAI_API_KEY=YOUR_OPEN_API_KEY
 ```
 
-5.Obtain the access link and click directly to access it. If you need to bind your own domain name, you can also fill in your own domain name in `Custom domain` and follow the prompts to configure the domain name CNAME
+5.获取访问链接。如果你需要自定义域名，可以点击 `Custom domain` 按钮后按照提示解析域名 CNAME
 
 ![Create Application](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230609/install-on-sealos-4.4esqkqu70z9c.webp)
 
-6.Wait for one to two minutes and open this link
+6.等待 1-2 分钟后点击链接，即可进去页面
 
 ![Open Link](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230609/install-on-sealos-5.5cgfpee3zeyo.webp)
 
-### Deploy on more servers
+### 部署在更多的服务器
 
-Please refer to the official deployment documentation: https://docs.astro.build/en/guides/deploy
+请参考官方部署文档：https://docs.astro.build/en/guides/deploy
 
-## Environment Variables
+## 环境变量
 
-You can control the website through environment variables.
+配置本地或者部署的环境变量
 
-| Name | Description | Default |
+| 名称 | 描述 | 默认 |
 | --- | --- | --- |
-| `OPENAI_API_KEY` | Your API Key for OpenAI. | `null` |
-| `HTTPS_PROXY` | Provide proxy for OpenAI API. e.g. `http://127.0.0.1:7890` | `null` |
-| `OPENAI_API_BASE_URL` | Custom base url for OpenAI API. | `https://api.openai.com` |
-| `HEAD_SCRIPTS` | Inject analytics or other scripts before `</head>` of the page | `null` |
-| `PUBLIC_SECRET_KEY` | Secret string for the project. Use for generating signatures for API calls | `null` |
-| `SITE_PASSWORD` | Set password for site, support multiple password separated by comma. If not set, site will be public | `null` |
-| `OPENAI_API_MODEL` | ID of the model to use. [List models](https://platform.openai.com/docs/api-reference/models/list) | `gpt-3.5-turbo` |
+| `OPENAI_API_KEY` | 你的 OpenAI API Key | `null` |
+| `HTTPS_PROXY` | 为 OpenAI API 提供代理。e.g. `http://127.0.0.1:7890` | `null` |
+| `OPENAI_API_BASE_URL` | 请求 OpenAI API 的自定义 Base URL. | `https://api.openai.com` |
+| `HEAD_SCRIPTS` | 在页面的 `</head>` 之前注入分析或其他脚本 | `null` |
+| `PUBLIC_SECRET_KEY` | 项目的秘密字符串。用于生成 API 调用的签名 | `null` |
+| `SITE_PASSWORD` | 为网站设置密码，支持使用英文逗号创建多个密码。如果未设置，则该网站将是公开的 | `null` |
+| `OPENAI_API_MODEL` | 使用的 OpenAI 模型。[模型列表](https://platform.openai.com/docs/api-reference/models/list) | `gpt-3.5-turbo` |
 
-## Enable Automatic Updates
+## 开启同步更新
 
-After forking the project, you need to manually enable Workflows and Upstream Sync Action on the Actions page of the forked project. Once enabled, automatic updates will be scheduled every day:
+Fork 项目后，您需要在 Fork 项目的操作页面上手动启用工作流和上游同步操作。启用后，每天都会执行自动更新：
 
 ![](https://cdn.jsdelivr.net/gh/yzh990918/static@master/20230518/image.2hhnrsrd2t1c.webp)
 
-
-## Frequently Asked Questions
+## 常见问题
 
 Q: TypeError: fetch failed (can't connect to OpenAI Api)
 
-A: Configure environment variables `HTTPS_PROXY`，reference: https://github.com/ddiu8081/chatgpt-demo/issues/34
+A: 配置环境变量 `HTTPS_PROXY`，参考：https://github.com/ddiu8081/chatgpt-demo/issues/34
 
 Q: throw new TypeError(${context} is not a ReadableStream.)
 
-A: The Node version needs to be `v18` or later, reference: https://github.com/ddiu8081/chatgpt-demo/issues/65
+A: Node 版本需要在 `v18` 或者更高，参考：https://github.com/ddiu8081/chatgpt-demo/issues/65
 
 Q: Accelerate domestic access without the need for proxy deployment tutorial?
 
-A: You can refer to this tutorial: https://github.com/ddiu8081/chatgpt-demo/discussions/270
+A: 你可以参考此教程：https://github.com/ddiu8081/chatgpt-demo/discussions/270
 
-## Contributing
+## 参与贡献
 
-This project exists thanks to all those who contributed.
+这个项目的存在要感谢所有做出贡献的人。
 
-Thank you to all our supporters!🙏
+感谢我们所有的支持者！🙏
 
 [![img](https://contributors.nn.ci/api?repo=ddiu8081/chatgpt-demo)](https://github.com/ddiu8081/chatgpt-demo/graphs/contributors)
 
