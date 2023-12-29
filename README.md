@@ -54,7 +54,7 @@
 
 > ###### 🔒 需要站点密码？
 >
-> 携带[`SITE_PASSWORD`](#environment-variables)进行部署
+> 携带 `SITE_PASSWORD` 进行部署
 
 ## 常见问题
 
