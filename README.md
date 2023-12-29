@@ -72,7 +72,9 @@ A: 你可以参考此教程：https://github.com/ddiu8081/chatgpt-demo/discussio
 
 感谢我们所有的支持者！🙏
 
-[![img](https://contributors.nn.ci/api?repo=ddiu8081/chatgpt-demo)](https://github.com/ddiu8081/chatgpt-demo/graphs/contributors)
+## 支持我们
+
+[爱发电](https://afdian.net/a/wxs7655)
 
 ## License
 
