@@ -9,7 +9,7 @@
 2. **国内外服务器均可搭建，无需接口代理**
 3. **使用BingAI接口，免费使用GPT-4**
 
-**其他GPT类项目快速接入Bing AI教程文档**: https://docs.api.ecylt.top
+**其他GPT类项目快速接入BingAI教程文档**: https://docs.api.ecylt.top
 
 ## 本地运行
 
